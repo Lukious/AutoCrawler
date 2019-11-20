@@ -33,7 +33,7 @@ python3 main.py [--skip true] [--threads 4] [--google true] [--naver true] [--fu
 
 --full false       Download full resolution image instead of thumbnails (slow)
 
---face flase       Face search mode
+--face false       Face search mode
 ```
 
 
@@ -47,7 +47,7 @@ You can download full resolution image of JPG, GIF, PNG files by specifying --fu
 
 # Data Imbalance Detection
 
-Detects data imblance based on number of files.
+Detects data imbalance based on number of files.
 
 When crawling ends, the message show you what directory has under 50% of average files.
 
@@ -63,9 +63,7 @@ sudo apt-get install screen <- This will allow you to close SSH terminal while r
 
 screen -S s1
 
-Xvfb :99 -ac &
-
-DISPLAY=:99 python3 main.py
+Xvfb :99 -ac & DISPLAY=:99 python3 main.py
 ```
 
 # Customize
